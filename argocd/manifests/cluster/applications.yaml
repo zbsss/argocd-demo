@@ -34,9 +34,9 @@ spec:
     repoURL: https://github.com/zbsss/argocd-demo.git
     targetRevision: HEAD
     helm:
-      releaseName: do-nothing-prod
+      releaseName: do-nothing-dev
       valueFiles:
-      - values-prod.yaml
+      - values-dev.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
