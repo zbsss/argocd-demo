@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: do-nothing-deployment
-  namespace: do-nothing
 spec:
   replicas: 3
   selector:
