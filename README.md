@@ -28,3 +28,6 @@ kubectl get all -A
 terraform destroy -auto-approve```
 
 
+# TODO
+- [ ] Initialize ArgoCD from Terraform
+- [ ] Configure nginx ingress from ArgoCD, not from Terraform
