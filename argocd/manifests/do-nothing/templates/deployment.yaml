@@ -17,4 +17,4 @@ spec:
       containers:
       - name: do-nothing-container
         image: "busybox"
-        command: ["sh", "-c", "while true; do echo 'Im still running'; sleep 60; done"]
+        command: ["sh", "-c", "while true; do echo 'Im still running'; sleep {{ .Values.sleepTime }}; done"]

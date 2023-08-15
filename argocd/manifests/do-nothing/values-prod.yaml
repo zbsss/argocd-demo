@@ -1,1 +1,2 @@
 replicaCount: 3
+sleepTime: 3600
