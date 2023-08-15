@@ -28,7 +28,7 @@ spec:
   destination:
     namespace: ingress-nginx
     server: https://kubernetes.default.svc
-  project: my-app
+  project: default
   source:
     path: argocd/manifests/ingress-nginx
     repoURL: https://github.com/zbsss/argocd-demo.git
