@@ -12,6 +12,10 @@ spec:
     path: argocd/manifests/my-app
     repoURL: https://github.com/zbsss/argocd-demo.git
     targetRevision: HEAD
+    helm:
+      releaseName: do-nothing-prod
+      valueFiles:
+      - values-prod.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
