@@ -25,9 +25,16 @@ curl localhost/bar/hostname
 
 kubectl get all -A
 
-terraform destroy -auto-approve```
-
+terraform destroy -auto-approve
+```
 
 # TODO
 - [ ] Initialize ArgoCD from Terraform
 - [ ] Configure nginx ingress from ArgoCD, not from Terraform
+
+
+# References
+1. [Configuring a KinD Cluster with NGINX Ingress Using Terraform and Helm](https://nickjanetakis.com/blog/configuring-a-kind-cluster-with-nginx-ingress-using-terraform-and-helm)
+2. [Terraform Provider for kind](https://github.com/tehcyx/terraform-provider-kind)
+3. [Manage Kubernetes Cluster with Terraform and Argo CD](https://piotrminkowski.com/2022/06/28/manage-kubernetes-cluster-with-terraform-and-argo-cd/)
+4. [Terraform and ArgoCD in beautiful harmony](https://medium.com/@Irori/terraform-and-argocd-in-beautiful-harmony-73c0c6e4544c)
