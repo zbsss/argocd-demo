@@ -4,6 +4,8 @@ metadata:
   name: {{ .Release.Name }}-deployment
   labels:
     app: {{ .Release.Name }}
+  annotations:
+    someAnnotation: 1
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
