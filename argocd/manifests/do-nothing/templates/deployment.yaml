@@ -16,6 +16,8 @@ spec:
     metadata:
       labels:
         app: {{ .Release.Name }}
+      annotations:
+        somePodAnnotation: '1'
     spec:
       containers:
       - name: do-nothing-container
